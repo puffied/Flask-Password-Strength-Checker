@@ -1,0 +1,175 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    cursor: default;
+    font-family: sans-serif;
+    background: #0f0f14;
+    color: #e5e5e5;
+    min-height: 100;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+p {
+    margin-top: 10px;
+}
+
+
+
+h1 { margin-bottom: 20px; color: #fff; }
+
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  gap: 30px;              
+}
+
+.card {
+    background: #1a1a24;
+    border: 1px solid #2a2a3a;
+    width: 530px;
+    max-width: 530px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+    margin-bottom: 20px;
+    
+  
+}
+
+
+
+details.card {
+    cursor: pointer;
+    padding: 0; 
+    overflow: hidden;
+}
+
+details.card summary {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    list-style: none;
+}
+
+
+details.card summary::-webkit-details-marker {
+    display: none;
+}
+
+
+details.card summary h1 {
+    margin: 0;
+    font-size: 1.2rem; 
+    display: flex;
+    flex-direction: column;
+}
+
+
+details.card summary span {
+    font-size: 0.85rem;
+    color: #8888a0;
+    font-weight: normal;
+    margin-top: 5px;
+}
+
+
+details.card summary::after {
+    content: '▼'; 
+    color: #8888a0;
+    font-size: 1rem;
+    transition: transform 0.3s ease;
+}
+
+
+details[open].card summary::after {
+    transform: rotate(180deg);
+}
+
+
+.tutorial-content {
+    cursor: default;
+    padding: 20px;
+    border-top: 1px solid #2a2a3a;
+    padding-top: 20px;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+
+.tutorial-content ul {
+    list-style-type: none;
+    margin-bottom: 15px;
+}
+
+.tutorial-content li {
+    margin-bottom: 8px;
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+details[open] .tutorial-content {
+    animation: fadeIn 0.4s ease-in-out forwards;
+}
+
+
+
+
+
+
+.box {
+    background: #1a1a24;
+    border: 1px solid #2a2a3a;
+    padding: 40px;
+    width: 100%;
+    max-width: 530px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+    margin-bottom: 20px;
+    
+  
+}
+
+
+label { display: block; margin-bottom: 8px; color: #8888a0; }
+
+input {
+    width: 100%;
+    padding: 12px;
+    background: #0f0f14;
+    border: 1px solid #2a2a3a;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #56589e;
+}
+
+.result {
+    padding: 16px;
+    background: #0f0f14;
+    border-radius: 3px;
+    font-weight: bold;
+    text-align: center;
+    transition: background 0.3s, color 0.3s;
+}
+
+.weak { background: #ef4444; color: white; }
+.medium { background: #eab308; color: black; }
+.strong { background: #22c55e; color: white; }

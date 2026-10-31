@@ -1,0 +1,47 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Strength Checker</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+   <div class="main">
+
+    
+    <details class="card" id="tutorial">
+    <summary>
+        <h1>The Optimal Password<span>Click here to see more</span></h1>
+    </summary>
+    
+    <div class="tutorial-content">
+        <ul>
+            <li><strong>Length:</strong> Use at least 12-16 characters.</li>
+            <li><strong>Complexity:</strong> Mix uppercase, lowercase, numbers, and symbols.</li>
+            <li><strong>Unpredictable:</strong> Avoid names, dates, or common words.</li>
+            <li><strong>Unique:</strong> Never reuse the same password across accounts.</li>
+        </ul>
+        <p><strong>Tip:</strong> Combine 3-4 random words with numbers and symbols (e.g., <em>BlueCoffeeTable!42</em>).</p>
+    </div>
+    </details>
+
+
+    <div class="box" id="fullbox">
+        <h1>Password Strength Checker</h1>
+        
+        <label>Enter a password:</label>
+        <input type="text" id="password-input" placeholder="Type here..." autocomplete="off">
+        
+        <div class="result" id="result">
+            Start typing to check strength.
+        </div>
+   </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
