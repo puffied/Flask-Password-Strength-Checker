@@ -41,7 +41,7 @@ document.addEventListener("ContentLoaded", () => {
 });
 
 
-
+// CSS card animation reset
 document.querySelectorAll("details").forEach((details) => {
     details.addEventListener("toggle", () => {
         if (!details.open) return;
